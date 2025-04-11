@@ -1,0 +1,107 @@
+# CMSC 215 Intermediate Programming: Programming Project 4
+
+The fourth programming project involves writing a program to test the relationships between
+time intervals. The program should contain four classes. The first class should a generic class
+Interval defined for any type that implements the Comparable interface. Objects of this type
+have a start and end of the generic type parameter that defines the start and end of the interval.
+The class should be immutable, so it should have no setter methods. At a minimum it should
+contain the following public methods:
+
+• A constructor that accepts the start and end of an interval and constructs an Interval
+object
+
+• A method within that is supplied an object of the generic type parameter and returns
+whether that object is inside the interval including the endpoints
+
+• A method subinterval that is passed an interval as a parameter and returns whether the
+interval parameter is a subinterval, completely within, the interval on which the method is
+invoked
+
+• A method overlaps that is passed an interval as a parameter and returns whether the
+interval parameter overlaps the interval on which the method is invoked
+
+The second class Time should contain two integer instance variables that represent the hours and
+minutes and one additional variable for the meridian, AM or PM. The class should implement
+the Comparable interface and should be immutable, so it should have no setter methods. At a
+minimum it should contain the following public methods:
+
+• A constructor that accepts the hours and minutes as integers and the meridian as a string
+and constructs a Time object
+
+• A constructor that accepts a string representation of a time in the format HH:MM AM
+and constructs a Time object
+
+• A method compareTo that compares two times and returns what is required of all such
+methods needed to implement the Comparable interface
+
+• A method toString that returns the string representation of the time in the format time in
+the format HH:MM AM
+
+When either constructor is called, several checks need to be made on the input. For both
+constructors, a check is needed to ensure that the hours and minutes are within range and that the
+meridian in AM or PM. For the constructor that accepts the string representation, additional
+checks are needed to ensure that the hours and minutes are numeric values. Should any check
+fail, an exception InvalidTime should be thrown that is provided the reason.
+
+The third class is the exception class InvalidTime that implements a checked exception. It
+should have an instance variable of type String that saves the message and the following two
+methods;
+
+• A constructor that accepts the message as a string and constructs an InvalidTime object
+
+• A method getMessage that returns the message
+
+The fourth class Project4 should implement a GUI interface that contains two buttons. The first
+button CompareIntervals should compare the two intervals and output one of the following
+messages depending upon how the intervals compare:
+
+• Interval 1 is a sub-interval of interval 2
+
+• Interval 2 is a sub-interval of interval 1
+
+• The intervals overlap
+
+• The intervals are disjoint
+
+Shown below is an example of the output when the CompareIntervals button is clicked:
+
+=== Time Interval Checker ===
+| ------------- | Start Time | End Time |
+| --------------| -----------| ---------|
+| Time Interval 1 | {input field} | {input field} |
+| Time Interval 2 | {input field} | {input field} |
+|             {Compare Intervals Button}          |
+| Time to Check | {input field}                   |
+|              {Check Time Button}                |
+| { Output display field }
+
+
+The second button CheckTime should check whether the time is within the intervals and output
+one of the following messages depending upon which intervals it is within:
+
+• Both intervals contain the time HH:MM AM
+
+• Only interval 1 contains the time HH:MM AM
+
+• Only interval 2 contains the time HH:MM AM
+
+• Neither interval contains the time HH:MM AM
+
+Shown below is an example of the output when the CheckTime button is clicked
+
+###Documentation Requirements:
+Make sure your Java program is using the recommended style such as:
+
+• Javadoc comment with your name as author, date, and brief purpose of the program
+
+• Comments for variables and blocks of code to describe major functionality
+
+• Meaningful variable names and prompts
+
+• Class names are written in upper CamelCase
+
+• Variable and method names are written in lower CamelCase
+
+• Constants are written in All Capitals
+
+• Use proper spacing and empty lines to make your source code human readable

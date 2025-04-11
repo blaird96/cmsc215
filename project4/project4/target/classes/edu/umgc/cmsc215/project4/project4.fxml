@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<GridPane fx:controller="edu.umgc.cmsc215.project4.PrimaryController"
+          xmlns="http://javafx.com/javafx/8.0.171"
+          xmlns:fx="http://javafx.com/fxml/1"
+          alignment="CENTER"
+          hgap="10" vgap="10">
+    <padding>
+        <Insets top="20" right="20" bottom="20" left="20"/>
+    </padding>
+
+    <!-- Header Row -->
+    <Label text="" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+    <Label text="Start Time" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+    <Label text="End Time" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+
+    <!-- Time Interval 1 -->
+    <Label text="Time Interval 1" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+    <TextField fx:id="interval1Start" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+    <TextField fx:id="interval1End" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+
+    <!-- Time Interval 2 -->
+    <Label text="Time Interval 2" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+    <TextField fx:id="interval2Start" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+    <TextField fx:id="interval2End" GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+
+    <!-- Compare Intervals Button -->
+    <Button fx:id="compareButton" text="Compare Intervals"
+            onAction="#handleCompare" GridPane.rowIndex="3" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+
+    <!-- Time to Check -->
+    <Label text="Time to Check" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+    <TextField fx:id="checkTime" GridPane.rowIndex="4" GridPane.columnIndex="1" GridPane.columnSpan="2"/>
+
+    <!-- Check Time Button -->
+    <Button fx:id="checkButton" text="Check Time"
+            onAction="#handleCheck" GridPane.rowIndex="5" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+
+    <!-- Output Display -->
+    <TextArea fx:id="outputArea" prefRowCount="4" editable="false"
+              GridPane.rowIndex="6" GridPane.columnIndex="0" GridPane.columnSpan="3"/>
+</GridPane>

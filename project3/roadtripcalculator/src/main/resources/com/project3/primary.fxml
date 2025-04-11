@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.project3.PrimaryController">
+
+    <Label text="Road Trip Calculator" style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <HBox spacing="10">
+        <Label text="Trip Distance:" />
+        <TextField fx:id="distanceField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Distance Unit:" />
+        <ComboBox fx:id="distanceUnitBox" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Fuel Efficiency:" />
+        <TextField fx:id="mpgField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Fuel Efficiency Unit:" />
+        <ComboBox fx:id="efficiencyUnitBox" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Gas Price ($/gallon):" />
+        <TextField fx:id="gasPriceField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Number of Days:" />
+        <TextField fx:id="daysField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Hotel Cost per Night ($):" />
+        <TextField fx:id="hotelField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Food Cost per Day ($):" />
+        <TextField fx:id="foodField" />
+    </HBox>
+
+    <HBox spacing="10">
+        <Label text="Attraction Cost ($):" />
+        <TextField fx:id="attractionField" />
+    </HBox>
+
+    <Button fx:id="calculateButton" text="Calculate" onAction="#handleCalculateButton" />
+
+    <Label fx:id="resultLabel" text="" wrapText="true" style="-fx-font-size: 14px;" />
+
+</VBox>

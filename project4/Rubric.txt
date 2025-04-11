@@ -1,0 +1,58 @@
+# Criteria	
+
+
+## Design
+
+### Meets
+Includes generic Interval class that implements Comparable and all its required methods (15)
+Includes Time class that implements Comparable and all its required methods (15)
+Includes InvalidTime class that implements a checked exception and all its required methods (5)
+Includes Project4 class (15)
+
+### Does Not Meet
+0 points
+Does not include generic Interval class that implements Comparable and all its required methods (0)
+Does not include Time class that implements Comparable and all its required methods (0)
+Does not include InvalidTime class that implements a checked exception and all its required methods (0)
+Does not include Project4 class (0)
+
+Score of Design,/ 50
+
+##Functionality
+
+### Meets
+100 points
+Generates correct GUI  (25)
+Generates correct output when Compare Intervals button is clicked (25)
+Generates correct output when Check Time button is clicked (25)
+Correctly throws exception on invalid times (25)
+
+### Does not meet
+0 points
+Does not generate correct GUI (0)
+Does not generate correct output when Compare Intervals button is clicked (0) 
+Does not generate correct output when Check Time button is clicked (0)
+Does not correctly throw exception on invalid times (0)
+
+Score of Functionality,/ 100
+
+
+##Documentation
+
+### Meet
+50 points
+Discussion of approach included (10)
+Includes correct UML diagram (10)
+Includes test plan with  sufficient test cases (10)
+Lessons learned included (10)
+Comment blocks with student name, project, date and code description included in each file (10)
+
+### Does not Meet
+0 points
+Discussion of approach not included (0)
+Does not include correct UML diagram (0)
+Does not include test plan with  sufficient test cases (0)
+Lessons learned not included (0)
+Comment blocks with student name, project, date and code description not included in each file (0)
+
+Score of Documentation,/ 50
